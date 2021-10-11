@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blood Bank Management</title>
+        <link rel = "icon" href = "data:image/jpeg;base64,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" 
+        type = "image/x-icon">
+        <style type="text/css">
+        body {
+            background-image: linear-gradient(to left, #c8f088, #dfbe94, #e4f38d);
+        }
+        p1 {
+            font-size: 30px;
+            text-align:inherit;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height: 1.8;
+            word-spacing: 10px;
+        }
+        nav 
+            {
+    position: absolute;
+    top: 60%;
+    right: 0;
+    left: 0;
+    width: 319px;
+    display: table;
+    margin: 0 auto;
+    transform: translateY(-50%);
+}
+nav a
+{
+    
+    position: relative;
+    width: 33.333%;
+    display: table-cell;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.2s ease color;
+}
+nav a:before, nav a:after
+{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.2s ease transform;
+}
+nav a:before
+{
+    top: 0;
+    left: 10px;
+    width: 6px;
+    height: 6px;
+}
+nav a:after
+{
+    top: 5px;
+    left: 18px;
+    width: 4px;
+    height: 4px
+}
+nav a:nth-child(1):before
+{
+    background-color: rgb(0, 0, 0);
+}
+nav a:nth-child(1):after
+{
+    background-color: red;
+}
+nav a:nth-child(2):before
+{
+    background-color: #00e2ff;
+}
+nav a:nth-child(2):after
+{
+    background-color: #17571c;
+}
+nav a:nth-child(3):before
+{
+    background-color: purple;
+}
+nav a:nth-child(3):after
+{
+    background-color: palevioletred;
+}
+nav a:nth-child(4)::before
+{
+    background-color: rgb(197, 69, 18);
+}
+nav a:nth-child(4):after
+{
+    background-color: rgb(82, 73, 212);
+}
+#indicator
+{
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(12, 12, 12);
+    border-radius: 5px;
+    transition: 0.2s ease left;
+}
+
+nav a:hover
+{
+    color: rgba(0, 0, 0, 0.959);
+}
+
+nav a:hover:before, nav a:hover:after
+{
+    transform: scale(1);
+}
+
+nav a:nth-child(1):hover ~ #indicator
+{
+    background: linear-gradient(130deg, rgb(0, 0, 0), red);
+}
+
+nav a:nth-child(2):hover ~ #indicator
+{
+    left: 34%;
+    background: linear-gradient(130deg, #00e2ff, #17571c);
+}
+
+nav a:nth-child(3):hover ~ #indicator
+{
+    left: 65%;
+    background: linear-gradient(130deg, purple, palevioletred);
+}
+nav a:nth-child(4):hover ~ #indicator
+{
+    left: 90%;
+    background: linear-gradient(130deg, rgb(197, 69, 18), rgb(82, 73, 212));
+}
+#ytd-url {
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 10px 14px;
+  margin: 20px;
+  color: rgba(248, 245, 245, 0.007);
+  font-family: Arial;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: rgba(241, 237, 237, 0);
+  border-radius: 4px;
+  box-shadow: 0 10px 20px -5px rgba(253, 251, 251, 0);
+  z-index: 125;
+}
+        
+        img {
+            display: block;
+            padding: 3px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            border: 3px solid rgb(0, 0, 0);
+        }
+        a {
+            text-decoration: none;
+        }
+        mark {
+            padding: 8pt;
+        }
+        h1 {
+            color: rgb(0, 0, 0);
+            text-decoration: underline;
+        }
+        </style>
+    </head>
+    <body>
+        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190626123927/untitlsssssed.png" alt="MP" height="350" width="auto">
+        <br>
+        <nav>
+        <a href="https://www.dsu.edu.in">ABOUT </a>
+        <a href="Abstract.html">ABSTRACT</a>
+        <a href="GrpMem.html">FOUNDERS</a>
+        <a href="login.html" target="_blank">LOGIN</a>
+        <div id="indicator"></div>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <footer>
+        <p>
+            <h1><center>Acknowledgment</center></h1>
+            <img src="https://content.jdmagicbox.com/comp/bangalore/s9/080pxx80.xx80.170921192757.p6s9/catalogue/dayananda-sagar-university-hongasandra-bangalore-universities-v7lk0gh1ed.jpg" alt="DSU" height="500">
+            <br>
+            <p1>
+                &ensp;&ensp;&ensp;It is not possible to finish a college project without taking any inputs
+from anyone, they can be our teachers, college staff, friends, or family members.
+So by writing an acknowledgment to express your gratitude to them for their contributions.
+In this accomplishment, I would like to express my special gratitude to all my teachers of 
+our college dayananda sagar university , without their guidance and feedback it is not possible 
+to complete this assignment.
+Finally, I would like to thank my parents and friends who helped me a lot in finishing this assignment.
+            </p1>
+            </p>
+        </footer>
+    </body>
+</html>
