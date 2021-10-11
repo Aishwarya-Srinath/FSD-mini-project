@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Members</title>
+    <link rel = "icon" href = "GrpMem.jpg" 
+        type = "image/x-icon">
+<style>
+body {
+  
+  font-family: tahoma;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+  background-position: center;
+  display:flexbox;
+  align-items: center;
+}
+
+.our-team {
+  padding: 30px 0 40px;
+  margin-bottom: 30px;
+  border-color: rgba(147, 238, 241, 0.849);
+  border-style: inset;
+  border-width: 15px;
+  border-color:aqua;
+  border-radius: 250px;
+  padding: 10px;
+  background-image:url("bg.png");
+  background-repeat:round;
+  text-align: center;
+  overflow: hidden;
+  position:relative;
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 100px;
+  width: 110px;
+  margin-bottom: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 20%;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 70%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display:block;
+  padding: 5px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #1369ce;
+  background-color: #ffffff;
+}
+
+p {
+    text-align:center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+</style>
+</head>
+<body>
+    <p>Group Guide</p>
+    <div class="container">
+        <div class="column">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="our-team">
+              <div class="picture">
+                <img class="img-fluid" src="mam.jpeg">
+              </div>
+              <div class="team-content">
+                <h3 class="name">Assistant Professor. Cauvery Raju</h3>
+                <h4 class="title">Department of CSE</h4>
+                <h4 class="title">Dayananda Sagar University</h4>
+              </div>
+            </div>
+          </div>
+          <br>
+
+    <p>Group Members</p>
+    <div class="container">
+        <div class="column">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="our-team">
+              <div class="picture">
+                <img class="img-fluid" src="puja.jpeg">
+              </div>
+              <div class="team-content">
+                <h3 class="name">PUJA RAI</h3>
+                <h4 class="title">ENG18CS0218</h4>
+                <h4 class="title">B.Tech Computer Science Engineering</h4>
+                <h4 class="title">Dayananda Sagar University</h4>
+              </div>
+              <ul class="social">
+                <li><a href="https://www.google.com/gmail/" class="fa fa-mail" aria-hidden="true">G-Mail:pujrai30@gmail.com</a></li><br>
+                <li><a href="https://github.com/pujarai30" class="fa fa-github" aria-hidden="true">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/puja-rai-522a971b8" class="fa fa-linkedin" aria-hidden="true">Linkedin</a></li>
+              </ul>
+            </div>
+          </div>
+          <br>
+          <div class="container">
+            <div class="column">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="our-team">
+              <div class="picture">
+                <img class="img-fluid" src="riya.jpg">
+              </div>
+              <div class="team-content">
+                <h3 class="name">RIYA SINGH</h3>
+                <h4 class="title">ENG18CS0231</h4>
+                <h4 class="title">B.Tech Computer Science Engineering</h4>
+                <h4 class="title">Dayananda Sagar University</h4>
+              </div>
+              <ul class="social">
+                <li><a href="https://www.google.com/gmail/" class="fa fa-mail" aria-hidden="true">G-Mail:vaishuriyasingh@gmail.com</a></li><br>
+                <li><a href="https://www.linkedin.com/in/riya-singh-611034184" class="fa fa-linkedin" aria-hidden="true">Linkedin</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="container">
+            <div class="column">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="our-team">
+              <div class="picture">
+                <img class="img-fluid" alt="Aishwarya" src="Aish.jpg">
+              </div>
+              <div class="team-content">
+                <h3 class="name">S.AISHWARYA</h3>
+                <h4 class="title">ENG18CS0235</h4>
+                <h4 class="title">B.Tech Computer Science Engineering</h4>
+                <h4 class="title">Dayananda Sagar University</h4>
+              </div>
+              <ul class="social">
+                <li><a href="https://www.google.com/gmail/" class="fa fa-mail" aria-hidden="true">G-Mail:aishu3800@gmail.com</a></li><br>
+                <li><a href="https://github.com/Aishwarya-Srinath" class="fa fa-github" aria-hidden="true">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/s-aishwarya-3800/" class="fa fa-linkedin" aria-hidden="true">Linkedin</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="container">
+            <div class="column">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="our-team">
+              <div class="picture">
+                <img class="img-fluid" alt="Ajitesh" src="Aji.jpeg">
+              </div>
+              <div class="team-content">
+                <h3 class="name">S.AJITESH</h3>
+                <h4 class="title">ENG18CS0236</h4>
+                <h4 class="title">B.Tech Computer Science Engineering</h4>
+                <h4 class="title">Dayananda Sagar University</h4>
+              </div>
+              <ul class="social">
+                <li><a href="https://www.google.com/gmail/" class="fa fa-mail" aria-hidden="true">G-Mail:ajiteshsriiram@gmail.com</a></li><br>
+                <li><a href="https://github.com/sajitesh" class="fa fa-github" aria-hidden="true">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/ajitesh-sriram-a82a45214" class="fa fa-linkedin" aria-hidden="true">Linkedin</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
